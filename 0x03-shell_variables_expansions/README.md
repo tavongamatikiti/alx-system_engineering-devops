@@ -41,6 +41,15 @@ This project contains shell scripts that demonstrate mastery of shell variables,
 | `12-combinations` | Prints all possible two-letter combinations except `oo` |
 | `13-print_float` | Prints a number with two decimal places |
 
+### Advanced Tasks
+
+| File | Description |
+|------|-------------|
+| `100-decimal_to_hexadecimal` | Converts a number from base 10 to base 16 |
+| `101-rot13` | Encodes and decodes text using ROT13 encryption |
+| `102-odd` | Prints every other line from input, starting with the first |
+| `103-water_and_stir` | Adds two numbers in custom bases and prints result in base `bestchol` |
+
 ## Usage Examples
 
 ### Task 0: Creating an Alias
@@ -97,6 +106,40 @@ $ # No output - oo is excluded
 $ export NUM=3.14159265359
 $ ./13-print_float
 3.14
+```
+
+### Task 100: Decimal to Hexadecimal
+```bash
+$ export DECIMAL=1337
+$ ./100-decimal_to_hexadecimal
+539
+$ export DECIMAL=15
+$ ./100-decimal_to_hexadecimal
+f
+```
+
+### Task 101: ROT13 Encryption
+```bash
+$ echo "Everyone is a proponent of strong encryption." | ./101-rot13
+Rirelbar vf n cebcbarag bs fgebat rapelcgvba.
+```
+
+### Task 102: Print Odd Lines
+```bash
+$ seq 1 10 | ./102-odd
+1
+3
+5
+7
+9
+```
+
+### Task 103: Custom Base Addition
+```bash
+$ export WATER="ewwatratewa"
+$ export STIR="ti.itirtrtr"
+$ ./103-water_and_stir
+shtbeolhc
 ```
 
 ## Repository
